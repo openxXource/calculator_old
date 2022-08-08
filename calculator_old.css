@@ -1,0 +1,142 @@
+html body{
+    font-family: monospace;
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgba(0, 255, 255, 0.2);
+    text-align: center;
+    }
+    
+    #wrapper{
+    display:inline-block;
+    text-align: center;
+    border-radius: 10%;
+    }
+    
+    #calculator{
+    
+    background-color: rgba(118, 234, 252, 1);
+    border-radius: 10%;
+    padding: 10px;
+    }
+    
+    #input-bar-wrapper{
+    font-size: 20px;
+    text-align: right;
+    margin: 20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    #input-bar-wrapper > input{
+    text-align: right;
+    width: 100%;
+    font-size: 30px;
+    }
+    #history-wrapper{
+    border-style:solid;
+    margin:20px;
+    padding: 5px;
+    overflow-x: auto;
+    background-color: grey;
+    width: 400px;
+    }
+    #history{
+    width: 100%;
+    color: yellow;
+    text-align:left;
+    text-shadow: 0px 0px 5px red, 0 0 5px yellow, 0 0 10px red;
+    }
+    
+    
+    #memory-wrapper{
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    
+    #memory-wrapper > *:hover{
+    background-color: green;
+    transform: scale(1.1);
+    }
+    
+    
+    #memory-wrapper > *{
+    border-style:solid;
+    margin: 2px;
+    border-radius: 20%;
+    }
+    
+    #correction-wrapper{
+    padding: 10px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    #correction-wrapper > *{
+    border-style:solid;
+    margin: 2px;
+    }
+    #correction-wrapper > *:hover{
+    background-color: red;
+    transform: scale(1.1);
+    }
+    
+    #ope-wrapper{
+    display:grid;
+    grid-template-columns:auto auto;
+    padding: 10px;
+    
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    #num-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+    
+    }
+    #num-container > * {
+    text-align: center;
+    border-style:solid;
+    border-radius: 20%;
+    }
+    #num-container > *:hover{
+    background-color: turquoise;
+    transform: scale(1.1);
+    }
+    #ope-container{
+    display:grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 5px;
+    padding: 10px;
+    
+    }
+    
+    #ope-container > *{
+    border-radius: 20%;
+    text-align: center;
+    border-style:solid;
+    }
+    #ope-container > *:hover{
+    background-color:yellow;
+    transform: scale(1.1);
+    }
+    
+    #logo{
+    font-weight: bold;
+    font-size: 25px;
+    color:yellow;
+    text-shadow: 0 0 5px red, 0 2px 5px red, 0 2px 5px red;
+    animation: logoAnim 2s infinite;
+    }
+    @keyframes logoAnim{
+    0%,100%{text-shadow: 0 0 5px red, 0 2px 5px red, 0 2px 5px red;}
+    50%{text-shadow: 0 0 1px red, 0 1px 1px red 0px 1px 1px red;}
+    }

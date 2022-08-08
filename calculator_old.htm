@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="wrapper">
+
+            <div id="logo">Calculator</div>
+            <div id="calculator">
+            
+            <div id="input-bar-wrapper">
+            <input id="input-bar"   placeholder="0" onfocus="this.placeholder=''" onblur="this.placeholder='0'"></input>
+            </div>
+            <div id ="history-wrapper">
+            <div id="history"></div>
+            </div>
+            
+            <div id ="memory-wrapper">
+            <div id="memory-store" onclick ="memoryStore();">MS</div>
+            <div id="memory-recall" onclick ="memoryRecall();">MR</div>
+            <div id="memory-clear" onclick ="memoryClear();">MC</div>
+            <div id="memory-plus" onclick ="memoryPlus();">M+</div>
+            <div id="memory-item" onclick ="memoryMinus();">M-</div>
+            </div>
+            
+            <div id ="correction-wrapper">
+            <div id="leftwards-arrow" onclick ="removeS();">
+            <
+            </div>
+            <div id ="CE" onclick ="removeNum();">
+            CE
+            </div>
+            <div id = "clear" onclick="removeA();">
+            C
+            </div>
+            </div>
+            
+            
+            
+            <div id="ope-wrapper">
+            
+            <div id="num-container">
+              <div id ="num-one"  onclick="getOne();" >1</div>
+              <div id ="num-two" onclick="getTwo();" >2</div>
+              <div id ="num-three" onclick="getThree();" >3</div>  
+              <div id ="num-four" onclick="getFour();" >4</div>
+              <div id ="num-five" onclick="getFive();" >5</div>
+              <div id ="num-six"  onclick="getSix();" >6</div>  
+              <div id ="num-seven" onclick="getSeven();" >7</div>
+              <div id ="num-eight" onclick="getEight();" >8</div>
+              <div id ="num-nine" onclick="getNine();" >9</div>
+              <div id ="num-zero" onclick="getZero();" style="grid-column:1 / 3;">0</div>
+              <div id ="num-dot" onclick="getDot();" >.</div>
+            </div>
+            
+            <div id="ope-container">
+            <div id="ope-posNeg" onclick="changeVal();">+/-</div>
+            <div id="ope-square" onclick ="potency();">a^x</div>
+            <div id="ope-multiply" onclick ="multiply();">*</div>
+            <div id="ope-dividision" onclick ="division();">/</div>
+            <div id="ope-addition" onclick="plus();">+</div>
+            <div id="ope-minus" onclick="minus();">-</div>
+            <div id="ope-equivalent" style="grid-row:4; grid-column: 1/3;" onclick ="equal();">=</div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!--Simple version of CalBulator-->
+        <script src="calculator_old.js" async defer></script>
+    </body>
+</html>
